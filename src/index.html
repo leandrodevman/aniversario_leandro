@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contagem até aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
+    <header class="hero">
+        <div class="container">
+            <img  class="hero__logo" src="./images/Playstation_logo_colour.svg.png" alt="EBAC">
+            <p class="hero__text">
+                Contador para o aniversário do programador Leandro: <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Ocupação</b>
+                        Desenvolvedor em treinamento
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Idade</b>
+                        Irá fazer 20 anos
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        13/08/2025 à meia noite
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Participar</a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--fav-game">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Jogo favorito</h2>
+                <p class="event__details__description">Perigo, morte e loucura estão em cada canto deste sombrio e horroroso mundo, e você deve descobrir seus segredos mais sombrios para sobreviver. -Um aterrorizante mundo novo: Faça uma jornada para uma cidade gótica cheia de horror, onde multidões loucas e criaturas assustadoras espreitam em cada canto.</p>
+            </div>
+            <img  class="event__image" src="./images/bloodborne.jpg" alt="Bloodborne">
+        </div>
+    </section>
+    <section class="event event--fav-film event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Filme favorito</h2>
+                <p class="event__details__description">O filme conta a história de dois planos para assassinar os líderes políticos da Alemanha nazista, um planejado por uma jovem francesa judia proprietária de cinema (Laurent), e o outro por um grupo de soldados judeus aliados liderados pelo tenente Aldo Raine (Pitt).</p>
+            </div>
+            <img  class="event__image" src="./images/bastardos-inglorios.jpeg" alt="Bastardos Inglórios">
+        </div>
+    </section>
+    <section class="event event--fav-series">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Série favorita</h2>
+                <p class="event__details__description">O chefe da máfia de Nova Jersey, lida com questões pessoais e profissionais que afetam seu estado mental, levando-o a procurar aconselhamento psiquiátrico.</p>
+            </div>
+            <img  class="event__image" src="./images/the-sopranos-wallpaper-preview.jpg" alt="Sopranos">
+        </div>
+    </section>
+    <section class="event event--fav-hq event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">HQ favorita</h2>
+                <p class="event__details__description">A história de Sandman é sobre Morpheus, o Rei dos Sonhos, e a sua jornada para recuperar o seu poder e o seu lugar no mundo. A trama é contada a partir da perspectiva de Morpheus e decorre entre o mundo humano, reinos mágicos e o inferno. </p>
+            </div>
+            <img  class="event__image" src="./images/sandman.jpg" alt="Sandman">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
